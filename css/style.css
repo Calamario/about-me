@@ -1,16 +1,12 @@
 body {
   background-color: rgb(165, 165, 168);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
-
-h2{
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  font-size: 10px;
+h1 {
+  font-size: 1.5em;
   color: white;
-
-  border: red;
-  height: 10px;
-  width: 10px;
-  
 }
+
 

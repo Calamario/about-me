@@ -70,8 +70,6 @@ if (favKaraoke === null) {
 }
 alert('Karaoke is one of my favorite things to do. It\'s just unfortunate that I\'m pretty toned-death. It\'s all good if you are having fun right? XP');
 
-// alert('Now for some Lighting Round. Remember to answer with "yes or "no".');
-
 var favColor = prompt('My favoirte font color is Red? Is this true about me?');
 if (favColor === null) {
   alert('You didn\'t say anything!');
@@ -85,40 +83,7 @@ if (favColor === null) {
 } else {
   alert('Hey! Follow the rules of the game! Please answer "yes" or "no".');
   console.log('User did not follow the rules');
-}
+} 
+alert('My favorite color is red, Just like SuperMario\'s favorite color.');
 
-// var favShape = prompt('My favorite shape is Rectangles. Do you think that\'s true about me?').toLocaleLowerCase();
-// if(favShape === 'yes') {
-//   alert(correctAns);
-//   console.log('User thinks I like rectangles');
-// } else if(favShape === 'no') {
-//   alert(wrongAns);
-//   console.log('User thinks I do not like rectangles');
-// } else {
-//   alert('Hey! Follow the rules of the game! Please answer "yes" or "no".');
-//   console.log('User did not follow the rules');
-// }
-
-// var favFont = prompt('My favorite font is Futura? Is this true about me?').toLocaleLowerCase();
-// if(favFont === 'yes') {
-//   alert(correctAns);
-//   console.log('User thinks I like Futura');
-// } else if(favFont === 'no') {
-//   alert(wrongAns);
-//   console.log('User thinks I do not like Futura');
-// } else {
-//   alert('Hey! Follow the rules of the game! Please answer "yes" or "no".');
-//   console.log('User did not follow the rules');
-// }
-
-// var favWord = prompt('My favorite word is "Supreme"? Is this true?').toLocaleLowerCase();
-// if(favWord === 'yes') {
-//   alert(correctAns);
-//   console.log('User thinks I like the word "Supreme"');
-// } else if(favWord === 'no') {
-//   alert(wrongAns);
-//   console.log('User thinks I do not like the word "Supreme"');
-// } else {
-//   alert('Hey! Follow the rules of the game! Please answer "yes" or "no".');
-//   console.log('User did not follow the rules');
-// }
+alert('Thanks for playing this game with me! Hope you learned a thing or two about me.');

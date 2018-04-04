@@ -11,6 +11,7 @@ As a developer, I want to add a seventh question to my guessing game that has mu
 
 As a developer, I want to keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name, e.g. "You got 4 out of 7 questions correct, Bobbi! Better luck next time."
 
+As a developer, I want to convert some of my appropriate biographical elements into unordered lists, such as my education summary and/or my work experience.
 
 I used the .eslintrc.json given by the class of 201 in Code Fellow
 I also used the reset.css from Meyers

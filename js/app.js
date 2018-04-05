@@ -102,10 +102,11 @@ alert('Alright, question 5 is not so much an About Me question but how like mind
 var userNum = prompt('Okay... I got one! What is your first guess?');
 console.log('This is the user\'s first guess');
 console.log('User guessed ' + userNum);
+// Creates a random float from 0 to 1, *10+1 changes it to a float from 1 to 10, floor makes it an integer
 var randNum = Math.floor(Math.random() * 10 + 1);
 var count = 1;
 
-// Continues checking if the inputted number is bigger or smaller or equal
+// Continues checking if the inputted number is bigger or smaller or equal for the first 3 tries
 while(randNum !== userNum && count < 4) {
   userNum = parseInt(userNum);
   if (randNum > userNum) {
@@ -122,14 +123,16 @@ while(randNum !== userNum && count < 4) {
     break;
   }
 }
-// To check if the 4th input of user was correct.
+// To check if the 4th input of user was correct and gives the final alert for the problem
 if(parseInt(userNum) === randNum) {
-  pointSystem ++;
   if(count === 1) {
-    alert('Nice job! You guessed the number I was thinking in on your first try! We must be Super a like! I\'ll give you all the points! You now have ' + (pointSystem + 100) + ' points out of 6.');
+    pointSystem += 100;
+    alert('Nice job! You guessed the number I was thinking in on your first try! We must be Super a like! I\'ll give you all the points! You now have ' + pointSystem + ' points out of 6.');
   } else if (count < 4) {
-    alert('Nice job! you guessed the number I was thinking in ' + count + ' tries. You now have ' + pointSystem + ' points out of 6.');
+    pointSystem++;
+    alert('Nice job! You guessed the number I was thinking in ' + count + ' tries. You now have ' + pointSystem + ' points out of 6.');
   } else {
+    pointSystem++;
     alert('Phew! You guessed the number on your last try! You now have ' + pointSystem + ' points out of 6.');
   }
 } else {

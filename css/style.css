@@ -9,6 +9,25 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-size: 1.3em;
+  color: darkturquoise;
 
+}
+.rectangle {
+  display: inline-block;
+  background-color: red;
+  width: 250px;
+  height: 75px;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 60px;
+  color: white;
+  font-style: italic
+}
+
+em {
+  font-size: 1.1em;
+  color: slateblue;
+}
 
 

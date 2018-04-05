@@ -102,8 +102,7 @@ alert('Alright, question 5 is not so much an About Me question but how like mind
 var userNum = prompt('Okay... I got one! What is your first guess?');
 console.log('This is the user\'s first guess');
 console.log('User guessed ' + userNum);
-//var randNum = Math.floor(Math.random() * 10 + 1);
-var randNum = 5;
+var randNum = Math.floor(Math.random() * 10 + 1);
 var count = 1;
 
 // Continues checking if the inputted number is bigger or smaller or equal
@@ -162,9 +161,9 @@ while (chances < 7 && flag){
     }
   }
   if (flag === true) {
-    alert('That\'s a good movie, but it is not my top 3 movies. ' + 'Your current point is ' + pointSystem + ' out of 6');
+    alert('That\'s a good movie, but it is not my top 3 movies. ');
   }
 }
 
 // Goodbye statement
-alert('Thanks for playing this game with me! Hope you learned a thing or two about me.');
+alert('Thanks for playing this game with me! Hope you learned a thing or two about me. You got ' + pointSystem + ' out of 6!');

@@ -23,21 +23,24 @@ var questions = ['Do you think my favorite sport is soccer?', 'My favorite pets 
 var answers = [ ['n', 'y', 'y', 'y'], ['no', 'yes', 'yes', 'yes'] ];
 var funFact = ['Soccer isn\'t my favorite sport. My favorite is actually Ultimate Frisbee. I also like a bunch of other sports like Tennis, ping pong, and e-sports haha.', 'I love dogs; in fact, I have two dogs! A shibe named Luna and half-shibe half-husky named Noctis!', 'Karaoke is one of my favorite things to do. It\'s just unfortunate that I\'m pretty toned-death. It\'s all good if you are having fun right? XP', 'My favorite color is red, just like SuperMario\'s favorite color.'];
 var guessArray = [];
+var scoreKeeper = 0;
+
+function rightWrong(x, i, scoreKeeper) {
+  if(answers[x][i] === guessArray[i].toLowerCase()) {
+    scoreKeeper++;
+    alert('Yep, you\'re right! :) Right now your score is ' + scoreKeeper + '/6 points');
+  } else {
+    alert('Sorry, you\'re wrong. :( Right now your score is ' + scoreKeeper + '/6 points');
+  }
+  return scoreKeeper;
+}
 
 for(var i = 0; i < questions.length; i ++) {
   guessArray.push(prompt(questions[i]));
   if(guessArray[i].length === 1) {
-    if(answers[0][i] === guessArray[i].toLowerCase()) {
-      alert('Yep, you\'re right! :) ');
-    } else {
-      alert('Sorry, you\'re wrong. :( ');
-    }
+    rightWrong(0, i, scoreKeeper);
   } else {
-    if(answers[1][i] === guessArray[i].toLowerCase()) {
-      alert('Yep, you\'re right! :) ');
-    } else {
-      alert('Sorry, you\'re wrong. :( ');
-    }
+    rightWrong(1, i, scoreKeeper);
   }
   alert(funFact[i]);
 }

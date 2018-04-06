@@ -18,16 +18,18 @@ function intro(){
     alert('You didn\'t answer with y or n.');
     console.log('User made a wrong input');
   }
+  alert('Let\'s play a game now! I will ask you are series of yes or no questions about me. I will make sure to keep score so try your best!');
 }
 
 
 var scoreKeeper = 0;
 function gameQuestions(scoreKeeper){
   var questions = ['Do you think my favorite sport is soccer?', 'My favorite pets are dogs! Do you think that statement is true?', 'Do you think I like karaoke?', 'My favorite color is Red? Is this true about me?']; // questions used for 1 to 4
-  var answers = [ ['n', 'y', 'y', 'y'], ['no', 'yes', 'yes', 'yes'] ];
+  var answers = [ ['n', 'y', 'y', 'y'], ['no', 'yes', 'yes', 'yes'] ]; // possible answers the user can input
   var funFact = ['Soccer isn\'t my favorite sport. My favorite is actually Ultimate Frisbee. I also like a bunch of other sports like Tennis, ping pong, and e-sports haha.', 'I love dogs; in fact, I have two dogs! A shibe named Luna and half-shibe half-husky named Noctis!', 'Karaoke is one of my favorite things to do. It\'s just unfortunate that I\'m pretty toned-death. It\'s all good if you are having fun right? XP', 'My favorite color is red, just like SuperMario\'s favorite color.'];
   var guessArray = [];
 
+  // function used to keep score and alert user if they were correct or wrong.
   function rightWrong(x, i, scoreKeeper) {
     if(answers[x][i] === guessArray[i].toLowerCase()) {
       scoreKeeper++;
@@ -75,8 +77,6 @@ function questionFive(){
       userNum = prompt('Not quite, I\'ll give you a hint, you are too high. ' + (5 - count) + ' tries left');
       console.log('This is the user\'s try number', count);
       console.log('User guessed ' + userNum);
-    } else {
-      break;
     }
   }
   // To check if the 4th input of user was correct and gives the final alert for the problem

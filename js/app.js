@@ -11,14 +11,14 @@ function intro(){
   } else if(myEthnicity.toLowerCase() === 'y') {
     alert('Haha, it\'s different right? My parents wanted a name that could be used in both Japan and US!');
     console.log('User was surprised by my name.');
-  }else if(myEthnicity.toLowerCase() === 'n') {
+  } else if(myEthnicity.toLowerCase() === 'n') {
     alert('Oh really? Did you meet another Asian with the name Mario. You have to introduce me to them sometime!');
     console.log('User was not surprised by my name.');
-  }else {
+  } else {
     alert('You didn\'t answer with y or n.');
     console.log('User made a wrong input');
   }
-  alert('Let\'s play a game now! I will ask you are series of yes or no questions about me. I will make sure to keep score so try your best!');
+  alert('Let\'s play a game now! I will ask you are series of yes or no questions about me. I will make sure to keep score so try your best! \n For these questions you can answer y or n,  yes or no');
 }
 
 
@@ -33,9 +33,9 @@ function gameQuestions(scoreKeeper){
   function rightWrong(x, i, scoreKeeper) {
     if(answers[x][i] === guessArray[i].toLowerCase()) {
       scoreKeeper++;
-      alert('Yep, you\'re right! :) Right now your score is ' + scoreKeeper + '/6 points');
+      alert('Yep, you\'re right! :) \n Right now your score is ' + scoreKeeper + '/6 points');
     } else {
-      alert('Sorry, you\'re wrong. :( Right now your score is ' + scoreKeeper + '/6 points');
+      alert('Sorry, you\'re wrong. :( \n Right now your score is ' + scoreKeeper + '/6 points');
     }
     return scoreKeeper;
   }
@@ -69,12 +69,12 @@ function questionFive(){
     userNum = parseInt(userNum);
     if (randNum > userNum) {
       count ++;
-      userNum = prompt('Not quite, I\'ll give you a hint, you are too low. ' + (5 - count) + ' tries left');
+      userNum = prompt('Not quite, I\'ll give you a hint, you are too low. \n' + (5 - count) + ' tries left');
       console.log('This is the user\'s try number', count);
       console.log('User guessed ' + userNum);
     } else if(randNum < userNum) {
       count ++;
-      userNum = prompt('Not quite, I\'ll give you a hint, you are too high. ' + (5 - count) + ' tries left');
+      userNum = prompt('Not quite, I\'ll give you a hint, you are too high. \n' + (5 - count) + ' tries left');
       console.log('This is the user\'s try number', count);
       console.log('User guessed ' + userNum);
     }
@@ -83,16 +83,16 @@ function questionFive(){
   if(parseInt(userNum) === randNum) {
     if(count === 1) {
       scoreKeeper += 100;
-      alert('Nice job! You guessed the number I was thinking in on your first try! We must be Super a like! I\'ll give you all the points! You now have ' + scoreKeeper + ' points out of 6.');
+      alert('Nice job! You guessed the number I was thinking in on your first try! We must be Super a like! I\'ll give you all the points! \n You now have ' + scoreKeeper + ' points out of 6.');
     } else if (count < 4) {
       scoreKeeper++;
-      alert('Nice job! You guessed the number I was thinking in ' + count + ' tries. You now have ' + scoreKeeper + ' points out of 6.');
+      alert('Nice job! You guessed the number I was thinking in ' + count + ' tries. \n You now have ' + scoreKeeper + ' points out of 6.');
     } else {
       scoreKeeper++;
-      alert('Phew! You guessed the number on your last try! You now have ' + scoreKeeper + ' points out of 6.');
+      alert('Phew! You guessed the number on your last try! \n You now have ' + scoreKeeper + ' points out of 6.');
     }
   } else {
-    alert('You used up all your tries. The number I was thinking was ' + randNum + '. Your current point is ' + scoreKeeper + ' out of 6');
+    alert('You used up all your tries. The number I was thinking was ' + randNum + '. \n Your current point is ' + scoreKeeper + ' out of 6');
   }
   return scoreKeeper;
 }
@@ -131,7 +131,7 @@ function questionSix(){
 }
 // Goodbye statement
 function goodBye(x){
-  alert('Thanks for playing this game with me! Hope you learned a thing or two about me. You got ' + x + ' out of 6!');
+  alert('Thanks for playing this game with me! Hope you learned a thing or two about me. \n  You got ' + x + ' out of 6!');
 }
 
 

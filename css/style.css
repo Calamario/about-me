@@ -1,41 +1,76 @@
+/* Make table of content
+borders that encompass each part 
+place background 
+place image of my face  */
+
 body {
-  background-color: rgb(165, 165, 168);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  margin: 20px;
+  background-image: url('http://blog.hostbaby.com/wp-content/uploads/2014/03/RedPolygons_1400x900.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  color: white;
 }
 
 h1 {
   font-size: 1.5em;
-  color: white;
-  background-color: red;
   text-align: center;
-  margin: 20px;
+  margin: 20px 20px;
 }
 
-h2{
-  margin: 20px;
-}
-
-li{
-  text-align: left;
-}
-
-.rectangle {
+.infoList {
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 45%;
+  margin:1%;
   display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+h2 {
+  margin-left: 20px;
+  color:  white;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-align: center;
+  margin: 10px;
+}
+
+p {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#rectangle {
   background-color: red;
-  width: 400px;
+  width: 350px;
   height: 75px;
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
   font-size: 60px;
   color: white;
-  font-style: italic
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 em {
   font-size: 1.1em;
-  color: slateblue;
+  color: rgb(226, 104, 104);
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  border: 2px solid white;
+
+  border-radius: 20px;
+}
 
